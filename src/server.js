@@ -16,13 +16,7 @@ app.use('/',webRoutes);
 
 
 // query 
-connection.execute(
-  'SELECT * FROM Users u ',
-  ['Rick C-137', 53],
-  function(err, results, fields) {
-    console.log(results); // results contains rows returned by server
-  }
-);
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
